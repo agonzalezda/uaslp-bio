@@ -1,0 +1,36 @@
+This is not the complete proyect. c2V seems to come from openCV
+LSM is a libratry for linear CSM, but is not present in this repo.
+
+
+3Dposition.py
+	Used to get images for calibration
+	Reads images from cameras detects circles in them and stores their
+	2D position in camera space.
+	Waits for keystroke before next set of images is adquired.
+	2D positions are stored on txt files.
+
+	Defines a function (using image) to determine the pos of circles on
+	the picture
+
+AMT.py and AMTnode.py
+	Used to read platform data.
+	Publish data on a txt file.
+	Does not seem to sync to images.
+
+cameraX.py
+	function get_image_mako -> reads one frame from the camera
+	
+color.py
+	Changes the color of the recorded image (c2v)
+
+image.py
+	Defines fucntion for preprocessing image and finding circles.
+
+NEP_master.py
+
+reconst3D.py
+	Takes the camera positiond and reconstructs 3D marker position using
+	LSM
+	
+trigger_adquisition.py
+trigger_calibration.py
